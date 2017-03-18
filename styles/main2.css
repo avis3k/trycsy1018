@@ -1,0 +1,39 @@
+body{font-size:15 px ; background :#ECF0F1 ; font-family : cursive ; margin :0}
+h1,h2,h3,h4,h5,h6,p,ul{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+header {background: green;text-align: center;padding: 3%;color : white ; margin-bottom: 0.5%}
+
+
+.menubar{background: green;padding: 0.1%;margin-bottom: 0.5%;}
+.menubar ul{display: flex;flex-direction: row;}
+.menubar ul li{margin: 1%;padding: 1%;background: lightblue;flex-grow: 1;text-align:center;}
+.menubar ul li:hover{background: white;border-radius: 1px}
+.menubar ul li:hover a{color: black;}
+.menubar ul li a{color: black;}
+.menubar ul li ul{display:none;width:30%;position: absolute;margin:0;}
+.menubar ul li:hover ul{display:block;margin: 1% 0 0 0;background: green;}
+
+
+
+section{background:white ; padding : 1% ; display : flex ; flex-flow:row nowrap;
+justify-content: space-around;}
+section article {background:lightblue; width: 25% ; padding : 1%}
+section article h3 {background: green ; color:white ; padding: 2% 3% ; text-align: center;}
+section article p {margin-top: 1% ; text-align:center;}
+.article-image img { width: 60%}
+.article-image p img{text-align: center ;}
+
+footer {background: green; display : flex ; flex-flow:row nowrap; padding: 3%;color : white ; margin-bottom: 0.5%; justify-content: space-around}
+footer article {background : white; padding : 1% ; width:30%}
+footer article h3{margin:3; background: lightblue;}
+footer article p{margin:1; background:green}
+
+@media all and (max-width : 600px)
+{ .menubar ul,section, footer {flex-direction: column}
+section article {width:100%}
+footer article {width:100% ; border-bottom: 19px solid red;}
+footer article : last-child {border :none;}
+
+
+}
